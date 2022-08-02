@@ -1,0 +1,15 @@
+environments:
+  env_int:
+    active: true
+    appUrl: "https://api.spotify.com/v1"
+    playlistID: 6zrHcacBVYNnzS1fzqA8cM
+    #    playlistID: 09P00KaaFb1f0GlyCcsBr4
+    invalidToken: 1234567890
+    userID: /10i1ojqeadpwyb2lyo014zyxi
+    blur: 1FTSo4v6BOZH9QxKc3MbVM
+    one: spotify:track:5IX4TbIR5mMHGE4wiWwKW0
+    immortality: spotify:track:0xXpSoKYklz7NfauPPL6wr
+    oczy: spotify:track:6q5FIPaFNs5XLvKLKfSdnT
+  env_test:
+    active: false
+    appUrl: xyz
