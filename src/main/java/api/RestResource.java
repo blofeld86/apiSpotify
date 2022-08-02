@@ -7,8 +7,7 @@ import java.util.HashMap;
 
 import static api.Route.API;
 import static api.Route.TOKEN;
-import static api.SpecBuilder.getRequestSpec;
-import static api.SpecBuilder.getResponseSpec;
+import static api.SpecBuilder.*;
 import static io.restassured.RestAssured.given;
 
 public class RestResource {
@@ -67,7 +66,7 @@ public class RestResource {
     }
 
     public static Response postAccount(HashMap map){
-        return given().
+        return given(getAccountRequestSpec()).
                        contentType(ContentType.URLENC).
                        formParams(map).
                 when().
